@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS exclusivo para páginas de notícias */
+/*** pesquisar noticias ***/
+#tpc-busca{
+	min-height:35px;
+}
+.div-pesq{
+	width:90%;
+	height:auto;
+	min-height:50px;
+	margin:8px auto;
+}
+.form-search{
+	width:90%;
+	height:auto;
+	min-height:50px;
+	margin:8px auto;
+}
+#buscar-fld{
+	width:80%;
+	margin-left:0.2%;
+	font-family: 'Oswald', 'Impact';
+	color:#063786;
+	margin-top:5px;
+}
+#buscar-btn{
+	width:19%;
+	margin-top:5px;
+	margin-right:0.2%;
+	font-family: 'Oswald', 'Impact';
+	color:#063786;
+}
+#link_{
+	text-align-last:right;
+}
+#autor_data{
+	font-size:8pt;
+}

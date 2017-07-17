@@ -1,19 +1,21 @@
 <?PHP
 	include("includes/head.php");
 ?>
-<title>NIDDA - Notícias</title>
+<title>Visualizar Notícias - Painel de Administração - NIDDA</title>
 </head>
-
 <body>
 	<header>
 			<div id="divlogo">
 				<div id="centerlogo">
-					<img id="logotipo" src="images/logotipo.png">
+					<img id="logotipo" src="../images/logotipo.png">
+					<?PHP 
+					include("includes/redirect.php");
+					?>
 				</div>
 			</div>
 	</header>
 	<!-- Fim cabeçalho - inicio menu -->
-	<?PHP $pagina = "noticias"; /* variavel de pagina*/?>
+	<?PHP $pagina = "visualizar"; /* variavel de pagina*/?>
 	<div id="menu">
 		<nav id="navmenu">
 			<ul id="listmenu">
@@ -21,17 +23,13 @@
 			</ul>
 		</nav>
 	</div>
-	<!-- Fim do Menu - inicio do Banner  -->
-	<section id="slides">	
-		<?PHP include("includes/banner.php");?>
-	</section>
-	<!-- Fim do Banner - inicio do Conteúdo  -->
+	<!-- Fim do Menu - inicio do Conteúdo  -->
 	<section id="conteudo">
 		<div id="cont1">
 			<div class="topic-box" id="tpc-busca">
 				<!-- motor de busca -->
 				<div class="div-pesq">
-					<form class="form-search" id="" action="noticias.php" method="post" enctype="multipart/form-data">
+					<form class="form-search" id="" action="visualizar-noticias.php" method="post" enctype="multipart/form-data">
 					
 						<input type="search" name="pesquisar" id="buscar-fld" placeholder="Pesquisar" value="">
 						
@@ -46,7 +44,7 @@
 							if(!is_numeric($page)){
 							echo'
 							<script language= "JavaScript">
-							location.href="noticias.php";
+							location.href="visualizar-noticias.php";
 							</script>
 							';}
 						}
@@ -74,7 +72,7 @@
 								while($exibe = $resultado->fetch(PDO::FETCH_OBJ)){
 						?>
 								<div class="topic-box">
-									<strong><?PHP echo $exibe->titulo ?></strong><br><img src="upload/<?PHP echo $exibe->imagem;?>"><br><?PHP echo limitarTexto($exibe->descricao, $limite = 300); ?><br><br><span id="link_"><a href="noticias/noticia.php?id=<?PHP echo $exibe->id;?>">Ver notícia completa</a></span>
+									<strong><?PHP echo $exibe->titulo ?></strong><br><img src="../upload/<?PHP echo $exibe->imagem;?>"><br><?PHP echo limitarTexto($exibe->descricao, $limite = 300); ?><br><br><span id="link_"><a href="../noticias/noticia.php?id=<?PHP echo $exibe->id;?>">Ver notícia completa</a></span>
 								</div>
 						<?PHP
 								}
@@ -137,7 +135,7 @@ else{
 	if(!is_numeric($page)){
 		echo'
 			<script language= "JavaScript">
-			location.href="noticias.php";
+			location.href="visualizar-noticias.php";
 			</script>
 	';}
 }
@@ -164,7 +162,7 @@ else{
 	if($page > $paginas){ // redireciona caso a página não exista
 		echo'
 		<script language= "JavaScript">
-		location.href="noticias.php";
+		location.href="visualizar-noticias.php";
 		</script>
 	';}
 if(isset($i)){} //não faz nada
@@ -173,7 +171,7 @@ if(isset($i)){} //não faz nada
 ?>
 <!-- div dos botões -->
 <div class="paginas">
-	<a href="noticias.php?page=1">Primeira Página</a>
+	<a href="visualizar-noticias.php?page=1">Primeira Página</a>
 <?PHP
 //programação dos botões
 	if(isset($_GET['page'])){
@@ -183,19 +181,19 @@ for($i = $page - $links; $i <= $page - 1; $i++){
 if($i <= 0){} //não faz nada
 else{ // pausa na programação dos botões
 ?>
-<a href="noticias.php?page=<?PHP echo $i;?>" class="ativo<?PHP echo $i;?>"><?PHP echo $i;?></a>
+<a href="visualizar-noticias.php?page=<?PHP echo $i;?>" class="ativo<?PHP echo $i;?>"><?PHP echo $i;?></a>
 <?PHP //apenas fechamento de chaves
 }}?>
 <!-- pág atual -->
-<a href="noticias.php?page=<?PHP echo $page;?>" class="ativo<?PHP echo $i;?>"><?PHP echo $page;?></a>
+<a href="visualizar-noticias.php?page=<?PHP echo $page;?>" class="ativo<?PHP echo $i;?>"><?PHP echo $page;?></a>
 <?PHP //mais programação de botões kk
 for($i = $page + 1; $i <= $page + $links; $i++){
 if($i > $paginas){} //não faz nada
 else{?>
-	<a href="noticias.php?page=<?PHP echo $i;?>" class="ativo"><?PHP echo $i;?></a>
+	<a href="visualizar-noticias.php?page=<?PHP echo $i;?>" class="ativo"><?PHP echo $i;?></a>
 	<?PHP }} //fechamento de chaves
 	?>
-<a href="noticias.php?page=<?PHP echo $paginas;?>">Última Página</a>
+<a href="visualizar-noticias.php?page=<?PHP echo $paginas;?>">Última Página</a>
 </div><!-- fim da div dos botões -->
 <?PHP
 	//o código pausado continua aqui
@@ -208,8 +206,8 @@ else{?>
 		</div>
 	</section>
 	<!-- Fim do Conteúdo - inicio do Rodapé  -->
-	<footer id="rodape">
+	<footer id ="footer2">
 		<?PHP include("includes/footer.php");?>
-	</footer>
+	</footer>	
 </body>
 </html>

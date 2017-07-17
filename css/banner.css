@@ -1,0 +1,33 @@
+@charset "utf-8";
+#slides {
+	margin: 10px auto 0 auto;
+	width: 100%;
+	height: auto;
+	max-width: 1080px; 		
+}
+#banner {
+	margin: 0 auto;	
+}
+#banner a {
+	border: none;
+	background-color: #FFF;
+	padding: 5px;
+	text-decoration: none;
+	color: #063786;
+}
+ #banner a:hover {
+	text-decoration: none;
+	background-color: #063786;
+	color: #FFF;
+}
+#banner a.hover {
+	background-color: #063786;
+	color: #FFF;
+}
+#banner #botoes {
+	width: 1080px;
+	text-align: right;
+}
+#banner #botoes {
+	padding-top: 5px;
+}

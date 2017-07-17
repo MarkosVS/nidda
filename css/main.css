@@ -1,0 +1,247 @@
+@charset "utf-8";
+body{
+	margin:0 auto;
+	background: url(../images/bg.jpg) no-repeat center top #063786;
+}
+header{
+	width:100%;
+	height:200px;	
+}
+#divlogo{
+	box-shadow:2px 2px 20px #000;
+	width:100%;
+	height:199px;
+	margin:0 auto;
+	max-width: 1920px;
+}
+#centerlogo{
+	margin: 0 auto;
+	width: 433px;
+	height: 199px;	
+}
+#logotipo{
+	width:433px;
+	height:199px;	
+}
+/** fim dos estilos - head **/
+/** inicio dos estilos - menu **/
+#menu {
+	width: 90%;
+	height: 80px;
+	background:rgba(255,255,255,0.03);	
+	text-align:center;	
+	max-width:1229px;
+	margin: 0 auto;
+	margin-top: -15px;
+	border-left: 2px #FFF solid;
+	border-right: 2px #FFF solid;
+}
+#navmenu {}
+#listmenu li {
+	line-height: 80px;
+	display:inline-block;
+	list-style: none;
+}
+#listmenu li a, .rodape_menus li a{
+	text-decoration: none;	
+	color: #FFF;
+	padding: 30px 30px;
+	font-family: 'Oswald', 'Impact';
+}
+#listmenu li a:hover, .ativo {
+	border-bottom: 2px #fff solid; 	
+	transition: 0.1s all;
+}
+/** fim dos estilos - menu **/
+/** inicio dos estilos - conteudo **/
+#conteudo{
+	width: 100%;
+	max-width:1080px;
+	height:auto;
+	min-height:440px;
+	margin:12px auto 0 auto;
+	background:#6699ff;
+	font-family: 'Oswald', 'Impact';
+	color:#063786;
+}
+#conteudo a{
+	text-decoration:none;
+	color:#063786;
+}
+#conteudo a:hover{
+	text-decoration:underline;
+}
+.topiclist{
+	width:50%;
+	height:100%;
+	min-height:440px;
+	padding-top:8px;
+	padding-bottom:8px;
+}
+.topic-box{
+	width:90%;
+	height:auto;
+	min-height:80px;
+	margin:5px auto;
+	background:rgba(238, 238, 238, 0.2);
+	padding:8px;
+	border-radius: 6px;
+}
+/* Pag inicial */
+#topic02{
+	margin-left:50%;
+	margin-top:-605px;
+}
+#titulo{
+	color:#eee;
+	text-transform:uppercase;
+}
+.topic-box img,.topic-box iframe{
+	max-width:100%;
+}
+/* Pag reporte Bug */
+.input-bug {
+	font-family: 'Oswald', 'Impact';
+	color:#063786;
+}
+/* Pag noticias */
+#img-lateral{
+	width:120px;
+	height:120px;
+	background:#1F11CF;
+}
+#img-lateral img{
+	width:100px;
+	height:100px;
+}
+#content-news{
+	width:calc(100%-120px);
+	height:auto;
+	max-height:100%;
+	background:#32FF00;
+}
+/* Pag Design */
+#cont1 {
+	width: 100%;
+	height: auto;
+	min-height: 440px;
+	max-height: 100%;
+	padding-top: 10px;	
+	padding-bottom: 10px;
+}
+.cont_pag {
+	padding: 8px;
+	width: 80%;
+	min-height: 205px;
+	height:auto;
+	background: rgba(238, 238, 238, 0.2);
+	margin: 8px auto;
+	text-align: center;
+	border-radius: 6px;
+		
+}
+#cont-pedido{
+	min-height: 65px;
+}
+#caric_img {
+	height: 320px;	
+}
+#recolor_img{
+	height: 210px;	
+}
+#reconst_img{
+	height:183px;
+}
+.img-port {
+	width: 320px;
+	height: 178px;	
+	border: 1px #3a3a3c solid ;
+}
+/* img 3d e dev */
+.img-3d{
+	width:560px;
+}
+.img-dev{
+	border: 1px #3a3a3c solid ;
+}
+/* Pag bug */
+.input-bug{
+	width:100%;
+	max-width:200px;
+	max-height:95px;
+}
+#msg{
+	width:250px;
+	max-width:250px;
+	min-height:95px;
+}
+#form-bug{
+	width:200px;
+	min-height:20px;
+	height:auto;
+	max-height:120px;
+}
+/* Pag login */
+.form-field{
+	width:180px;
+	height:50px;
+}
+.input-login{
+	font-family: 'Oswald', 'Impact';
+	color:#063786;
+}
+.input-submit{
+	width:60%;
+	height:60%;
+}
+.input-botoes{
+	margin-top:8px;
+}
+/** fim dos estilos - conteudo **/
+/** inicio dos estilos - rodapé **/
+#rodape{
+	width: 100%;
+	max-width:1080px;
+	height:220px;
+	background:#6699ff;
+	margin:12px auto 0 auto;
+}
+#topo_rodape{
+	width:100%;
+	height:180px;
+	padding-top:3px;
+	padding-left:8px;
+}
+#xoxomidia h2{
+	color: #FFF;
+	font-family: 'Oswald', 'Impact';	
+}
+#xoxomidia img {
+	border-radius:4px 4px 4px;	
+}
+#copyright{
+	font-family: 'Oswald', 'Impact';
+	color: #FFF;
+	background:#3366cc;
+	height:40px;
+	line-height:40px;
+	padding-left:15px;
+}
+/* rodape 02 */
+#footer2{
+	width: 100%;
+	max-width:1080px;
+	height:auto;
+	background:#6699ff;
+	margin:12px auto 0 auto;
+}
+
+/************  YOU SHALL  ************/
+/************  NOT PASS  ************/
+#tb-pedidos{
+	border:thin solid #000;
+}
+.td-pedidos{
+	border:thin solid #000;
+	color:#000;
+}

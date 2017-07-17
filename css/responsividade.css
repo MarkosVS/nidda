@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* lets do it - site responsivo */
+/* como fica o site em telas de até 1024px de largura */
+@media screen and (max-width: 1024px){
+	/* cabeçalho */
+	#divlogo{
+	box-shadow:2px 2px 20px #000;
+	width:100%;
+	min-width:100%;
+	max-width: 1920px;
+	}
+	/* menu */
+	#listmenu li a, .rodape_menus li a{
+	padding: 30px 15px;
+	font-family: 'Oswald';
+	}
+	/* banner */
+	#slides {
+		display:none;		
+	}
+	#banner {
+		display:none;
+	}
+	#banner a {
+		display:none;
+	}
+	#banner a:hover {
+		display:none;
+	}
+	#banner a.hover {
+		display:none;
+	}
+	#banner #botoes {
+		display:none;
+	}
+	#banner #botoes {
+		display:none;
+	}
+}
+
